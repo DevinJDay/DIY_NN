@@ -3,6 +3,8 @@ import os
 # Definitions of various optimizers
 
 # SGD optimizer
+# commonly used optimizer called Stochastic Gradient Descent (SGD)
+# an algorithm that finds the steepest descent during each iteration
 class Optimizer_SGD:
     # Initialize optimizer - set settings,
     # learning rate of 1. is default for this optimizer
@@ -55,6 +57,7 @@ class Optimizer_SGD:
         self.iterations += 1
 
 # Adagrad optimizer
+# adaptive gradient, institutes a per-parameter learning rate rather than a globally-shared rate.
 class Optimizer_Adagrad:
     # Initialize optimizer - set settings
     def __init__(self, learning_rate=1., decay=0., epsilon=1e-7):
