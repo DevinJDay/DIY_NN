@@ -57,7 +57,8 @@ class Layer_Dense:
         self.weights = weights
         self.biases = biases
 
-# Dropout
+# Dropout layer
+# to prevent overfitting
 class Layer_Dropout:
     # Init
     def __init__(self, rate):
