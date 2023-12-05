@@ -33,12 +33,6 @@ model = Model.load('fashion_mnist.model')
 X, y, X_test, y_test = create_data_mnist('fashion_mnist_images')
 
 
-
-# Shuffle the test dataset
-keys = np.array(range(X_test.shape[0]))
-np.random.shuffle(keys)
-X_test = X_test[keys]
-y_test = y_test[keys]
 # Scale and reshape samples
 X_test = (X_test.reshape(X_test.shape[0], -1).astype(np.float32) -
 127.5) / 127.5
@@ -47,9 +41,11 @@ print("\n Model Evaluation:")
 model.evaluate(X_test, y_test)
 
 
-# Predict on samples from validation dataset
+# Predict on 10 random samples from validation dataset
 # and print the result
-confidences = model.predict(X_test[995:1005])
+selected_indices = np.random.choice(X_test.shape[0], 10, replace=False)
+
+confidences = model.predict(X_test[selected_indices])
 
 
 # and print the result of predictions
@@ -63,9 +59,9 @@ print(predict_labels)
 
 # Print their true labels
 print("\n True labels of predicting on samples from validation dataset:")
-print(y_test[995:1005])
+print(y_test[selected_indices])
 true_labels = []
-for true_label in y_test[995:1005]:
+for true_label in y_test[selected_indices]:
     true_labels.append(fashion_mnist_labels[true_label])
 print(true_labels)
 

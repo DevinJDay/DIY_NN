@@ -35,7 +35,7 @@ image_data = (image_data.reshape(1, -1).astype(np.float32) - 127.5) / 127.5
 model = Model.load('fashion_mnist.model')
 
 
-# Predict on the image
+# Predict on an images outside of our dataset
 confidences = model.predict(image_data)
 # Get prediction instead of confidence levels
 predictions = model.output_layer_activation.predictions(confidences)
