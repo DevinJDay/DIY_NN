@@ -32,6 +32,8 @@ model = Model.load('fashion_mnist.model')
 # Create dataset
 X, y, X_test, y_test = create_data_mnist('fashion_mnist_images')
 
+
+
 # Shuffle the test dataset
 keys = np.array(range(X_test.shape[0]))
 np.random.shuffle(keys)

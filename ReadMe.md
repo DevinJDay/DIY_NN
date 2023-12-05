@@ -53,7 +53,7 @@ This project aims to build a neural network from scratch withouting using any AI
 
 ## Model training:
 - train_NN.py: 
-  * To demenstrate, we constructed a model containing the input layer, 2 hidden layers using ReLU activation, and an output layer with softmax activation. Since we’re building a classification model, we used cross-entropy loss, Adam optimizer, and categorical accuracy
+  * To demenstrate, we constructed a model containing 2 hidden layers using ReLU activation, and an output layer with softmax activation. Since we’re building a classification model, we used cross-entropy loss, Adam optimizer, and categorical accuracy
   * Run it to train and save a model 
 
 ## Prediction:
