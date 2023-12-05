@@ -11,6 +11,9 @@
      * Python’s built-in pickle module to serialize any Python object
   - import copy
      * to make a copy of the model, and to save a model during the training process as a checkpoint
+  - Alternatively: import nnfs
+     * to ensure repeatable results for training
+     * pip install nnfs
 
 ## Project Description: 
 This project aims to build a neural network from scratch withouting using any AI libraries.
