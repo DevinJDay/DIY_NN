@@ -1,7 +1,7 @@
 import numpy as np
 import os
-import copy
-import pickle
+import copy # to make a copy of the model, and to save a model during the training process as a checkpoint
+import pickle # Python’s built-in pickle module to serialize any Python object
 from Layers import Layer_Input
 from Activation_Funcs import Activation_Softmax
 from Losses import Loss_CategoricalCrossentropy
