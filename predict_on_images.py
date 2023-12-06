@@ -32,7 +32,7 @@ image_data = 255 - image_data
 image_data = (image_data.reshape(1, -1).astype(np.float32) - 127.5) / 127.5
 
 # Load the model
-model = Model.load('fashion_mnist.model')
+model = Model.load('fashion_mnist2.model')
 
 
 # Predict on an images outside of our dataset

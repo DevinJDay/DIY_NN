@@ -28,7 +28,7 @@ fashion_mnist_labels = {
 }
 
 # Load the model
-model = Model.load('fashion_mnist.model')
+model = Model.load('fashion_mnist2.model')
 # Create dataset
 X, y, X_test, y_test = create_data_mnist('fashion_mnist_images')
 

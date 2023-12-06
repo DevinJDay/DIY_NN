@@ -55,4 +55,4 @@ epochs=10, batch_size=128, print_every=100)
 
 
 # save the model to local path
-model.save('fashion_mnist.model')
+model.save('fashion_mnist2.model')
