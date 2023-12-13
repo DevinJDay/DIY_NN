@@ -12,7 +12,7 @@
   - import copy
      * to make a copy of the model, and to save a model during the training process as a checkpoint
   - Alternatively: import nnfs
-     * to ensure repeatable results for training
+     * to ensure repeatable results for training and testing
      * pip install nnfs
 
 ## Project Description: 
@@ -59,7 +59,7 @@ This project aims to build a neural network from scratch withouting using any AI
   * To demenstrate, we constructed a model containing an input layer, 2 hidden layers using ReLU activation, and an output layer with softmax activation. Since we’re building a classification model, we used cross-entropy loss, Adam optimizer, and categorical accuracy
   * Run it to train and save a model 
 
-## Test Prediction:
+## Test with Prediction:
 
 - predict_on_dataset.py: 
   * we want to see if the model we trained actually works
