@@ -27,8 +27,7 @@ class Accuracy:
         self.accumulated_sum = 0
         self.accumulated_count = 0
 
-# A
-# ccuracy calculation for classification model
+# Amccuracy calculation for classification model
 class Accuracy_Categorical(Accuracy):
     def __init__(self, *, binary=False):
         # Binary mode?

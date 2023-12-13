@@ -43,6 +43,8 @@ This project aims to build a neural network from scratch withouting using any AI
   * Loads and returns a model
 
 ## Dataset preparation:
+### This part is already done 
+### and the dataset is in the "fashion_mnist_images" folder
 - data_download.py: 
   * Run it to download The Fashion MNIST image dataset (or replace the link with other datasets)
   * The Fashion MNIST dataset is a collection of 60,000 training samples and 10,000 testing samples of 28x28 images of 10 various clothing items like shoes, boots, shirts, bags, and more.
@@ -52,11 +54,13 @@ This project aims to build a neural network from scratch withouting using any AI
   * Run it to load and create a MNIST dataset for training and testing
 
 ## Model training:
+### We train a model saved as "fashion_mnist.model"
 - train_NN.py: 
   * To demenstrate, we constructed a model containing an input layer, 2 hidden layers using ReLU activation, and an output layer with softmax activation. Since we’re building a classification model, we used cross-entropy loss, Adam optimizer, and categorical accuracy
   * Run it to train and save a model 
 
-## Prediction:
+## Test Prediction:
+
 - predict_on_dataset.py: 
   * we want to see if the model we trained actually works
   * run it to predict on the samples from validation dataset and print the result
